@@ -76,7 +76,7 @@ class DoublyLinkedList:
     
     else:
       current_head = self.head
-      self.head = self.head.prev
+      self.head = self.head.next
       self.head.next = None
       return current_head
 
@@ -155,7 +155,7 @@ class DoublyLinkedList:
       self.remove_from_head()
 
     elif self.tail is node:
-      self.remove_from_tail
+      self.remove_from_tail()
     
   """Returns the highest value currently in the list"""
   def get_max(self):
