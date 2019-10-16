@@ -77,7 +77,7 @@ class DoublyLinkedList:
     else:
       current_head = self.head
       self.head = self.head.next
-      self.head.next = None
+      self.head.prev = None
       return current_head
 
   """Wraps the given value in a ListNode and inserts it 
